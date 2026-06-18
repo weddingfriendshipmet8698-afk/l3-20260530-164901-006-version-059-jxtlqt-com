@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索 - 亚洲电影合集</title>
+<meta name="description" content="整理近期亚洲电影内容，涵盖剧情、动作、爱情等多种类型。 站内搜索。">
+<meta name="keywords" content="最新亚洲电影,亚洲电影,最新影片,影片合集,高清电影,免费在线观看,电影更新">
+<meta name="theme-color" content="#07111f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="搜索 - 亚洲电影合集">
+<meta property="og:description" content="整理近期亚洲电影内容，涵盖剧情、动作、爱情等多种类型。 站内搜索。">
+<meta property="og:image" content="1.jpg">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<script defer src="js/site.js"></script>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>亚洲电影合集</strong>
+          <span>Static Film Library</span>
+        </span>
+      </a>
+
+      <div class="nav-panel">
+        <nav class="nav">
+          <a class="" href="index.html">首页</a>
+          <a class="" href="categories.html">分类总览</a>
+          <a class="" href="ranking.html">排行榜</a>
+          <a class="is-active" href="search.html">搜索</a>
+        </nav>
+        <div class="header-actions">
+          <form class="search-inline" action="search.html" method="get">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10.5 18.5a8 8 0 1 1 5.4-14.1A8 8 0 0 1 10.5 18.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input type="search" name="q" placeholder="搜索影片标题 / 关键词" autocomplete="off">
+          </form>
+          <a class="button secondary" href="ranking.html">热播榜入口</a>
+        </div>
+      </div>
+
+      <button class="icon-button mobile-toggle" data-nav-toggle aria-label="展开导航" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="container section" data-global-search>
+  <div class="hero fade-up" style="padding:24px;">
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <div>
+          <div class="badge-row"><span class="badge">全站搜索</span><span class="badge">2000 部影片</span><span class="badge">即时筛选</span><span class="badge">静态索引</span></div>
+          <h1>全站搜索<br><em>按标题、类型、地区或标签找片</em></h1>
+          <p>搜索页会直接读取本地索引文件，支持标题、地区、年份、标签和简介关键词即时匹配。输入任意关键字后，结果会在当前页面即时重排。</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="./categories.html">浏览分类</a>
+          <a class="button secondary" href="./ranking.html">打开排行榜</a>
+        </div>
+      </div>
+      <div class="panel raised" style="padding:20px;">
+        <div class="toolbar" style="margin-bottom:14px;">
+          <div class="field" style="flex:1;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10.5 18.5a8 8 0 1 1 5.4-14.1A8 8 0 0 1 10.5 18.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input type="search" data-global-input placeholder="搜索标题、关键词或类型">
+          </div>
+          <div class="field" style="max-width:230px;flex:0 1 230px;">
+            <span style="color:var(--muted);white-space:nowrap;">排序</span>
+            <select data-global-sort>
+              <option value="all">默认</option>
+              <option value="latest">最新年份</option>
+              <option value="region">地区</option>
+              <option value="genre">类型</option>
+            </select>
+          </div>
+        </div>
+        <div class="badge-row">
+          <span class="badge hot is-active" data-global-chip data-value="全部">全部</span>
+          <span class="badge" data-global-chip data-value="剧情">剧情</span>
+          <span class="badge" data-global-chip data-value="悬疑">悬疑</span>
+          <span class="badge" data-global-chip data-value="动作">动作</span>
+          <span class="badge" data-global-chip data-value="爱情">爱情</span>
+          <span class="badge" data-global-chip data-value="科幻">科幻</span>
+        </div>
+        <div style="margin-top:16px;color:var(--muted);">当前结果：<strong data-global-count>2000</strong> 部</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">搜索结果</h2>
+      <p class="section-subtitle">默认先显示一批推荐条目，输入关键字后会自动替换为匹配结果。</p>
+    </div>
+  </div>
+  <div class="grid-4" data-global-results></div>
+</section>
+
+<script defer src="./js/search-index.js"></script>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+          <span class="brand-mark" style="width:34px;height:34px;border-radius:12px;"></span>
+          <strong>亚洲电影合集</strong>
+        </div>
+        <div>整理近期亚洲电影内容，涵盖剧情、动作、爱情等多种类型。</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类</a>
+        <a href="ranking.html">排行榜</a>
+        <a href="search.html">搜索</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="icon-button back-to-top" data-back-to-top aria-label="返回顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
